@@ -1,7 +1,7 @@
 require_relative './main_menu_options'
 
 class MainMenu
-    def main_menu
+    def self.main_menu
         MainMenuOptions.main_menu_options
         menu_option = gets.chomp.to_i
         case menu_option
@@ -31,12 +31,12 @@ class MainMenu
             add_a_game
         when 13
             puts 'All catalogue data has been saved'
+            puts 'Thank you for using your catalogue'
             exit
         else
             puts 'Invalid selection'
-            puts 'Please enter a valid number between 1 - 12'
+            puts 'Please enter a valid number between 1 - 12 or 13 to exit the application'
         end
-
+        main_menu
     end
-    
 end
