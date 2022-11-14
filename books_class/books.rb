@@ -1,7 +1,7 @@
 require_relative '../item'
 
-class Book < Item
-  attr_accesor :name, :publish_date, :publisher, :cover_state
+class Books < Item
+  attr_accessor :name, :publish_date, :publisher, :cover_state
 
   def initialize(name, publish_date, publisher, cover_state, id = Random.rand(1..1000))
     super(id, name, publish_date)
