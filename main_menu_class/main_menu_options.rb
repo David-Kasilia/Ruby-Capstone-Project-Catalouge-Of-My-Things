@@ -16,5 +16,6 @@ class MainMenuOptions
         11- Add a movie
         12- Add a game
         13- Save Catalogue and Exit App'
+        puts 'Waiting for user selection.....'
     end  
 end
