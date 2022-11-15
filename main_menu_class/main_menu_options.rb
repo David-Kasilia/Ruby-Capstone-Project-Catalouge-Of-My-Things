@@ -12,7 +12,7 @@ class MainMenuOptions
         8- List all sources(eg: From a friend, Online shop)
         9- Add a book
         10- Add a music album
-        11- Add a movie
+        11- Add a label
         12- Add a game
         13- Save Catalogue and Exit App'
     puts 'Waiting for user selection.....'
