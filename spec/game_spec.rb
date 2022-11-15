@@ -8,7 +8,7 @@ describe Game do
     last_played_at = 2018
     name = 'Super Mario'
     publish_date = Date.parse('2018-01-01')
-    game = Game.new(name, multiplayer, last_played_at, publish_date, archived)
+    game = Game.new(name, multiplayer, last_played_at, archived, publish_date)
     it 'should not be archived' do
       expect(game.archived).to eq(true)
     end
