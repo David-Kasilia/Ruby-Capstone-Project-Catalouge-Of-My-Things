@@ -2,6 +2,7 @@ class Item
   attr_reader :id, :archived, :genre, :author, :label
   attr_accessor :publish_date, :name
 
+  # rubocop:disable Style/OptionalBooleanParameter
   def initialize(id, name, publish_date, archived = false)
     @id = id || Random.rand(1..1000)
     @name = name
@@ -9,6 +10,7 @@ class Item
     @archived = archived
   end
 
+  # rubocop:enable Style/OptionalBooleanParameter
   def add_genre(genre)
     @genre = genre
     @genre.items.push(self) unless @genre.items.include?(self)

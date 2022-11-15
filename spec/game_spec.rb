@@ -1,5 +1,4 @@
 require_relative '../game'
-
 require 'date'
 
 describe Game do
@@ -9,7 +8,7 @@ describe Game do
     last_played_at = 2018
     name = 'Super Mario'
     publish_date = Date.parse('2018-01-01')
-    game = Game.new( name, multiplayer, last_played_at, publish_date, archived )
+    game = Game.new(name, multiplayer, last_played_at, publish_date, archived)
     it 'should not be archived' do
       expect(game.archived).to eq(true)
     end
@@ -17,6 +16,4 @@ describe Game do
       expect(game).to be_an_instance_of(Game)
     end
   end
-  end
-
-  describe
+end
