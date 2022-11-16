@@ -10,6 +10,7 @@ CREATE TABLE item (
     archived BOOLEAN NOT NULL,
     PRIMARY KEY(id)
 );
+
 CREATE TABLE books (
     id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
     name VARCHAR(250) NOT NULL,
@@ -24,4 +25,17 @@ CREATE TABLE label (
     title VARCHAR(50),
     color VARCHAR(50),
     PRIMARY KEY (id)
+);
+
+CREATE TABLE music_album (
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
+    archived boolean NOT NULL,
+    name text NOT NULL,
+    publish_date date NOT NULL,
+    FOREIGN KEY(id) references item(id)
+);
+
+CREATE TABLE genre (
+    id INT GENERATED ALWAYS AS IDENTITY NOT NULL,
+    name text NOT NULL
 );
