@@ -25,4 +25,3 @@ class App
     @labels = populate_label_list
   end
 end
-

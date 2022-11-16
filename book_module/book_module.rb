@@ -66,7 +66,6 @@ module BookMethods
     stored_label = fetch_data('labels')
     new_label = Label.new(title, color)
     @labels << new_label unless @labels.include?(new_label)
-    @labels << new_label
     label_obj_data = { title: title, color: color }
     stored_label.push(label_obj_data)
     update_data('labels', stored_label)
@@ -85,6 +84,4 @@ module BookMethods
       end
     end
   end
-end
-
 end
