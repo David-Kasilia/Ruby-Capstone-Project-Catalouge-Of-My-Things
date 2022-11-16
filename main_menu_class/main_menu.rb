@@ -1,8 +1,6 @@
 require_relative './main_menu_options'
 
-
 module MainMenu
-
   # rubocop:disable Metrics/CyclomaticComplexity
   # rubocop:disable Metrics/MethodLength
   def main_menu

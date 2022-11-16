@@ -1,4 +1,3 @@
-require_relative './main_menu_class/main_menu'
 require_relative './app'
 
 def main
