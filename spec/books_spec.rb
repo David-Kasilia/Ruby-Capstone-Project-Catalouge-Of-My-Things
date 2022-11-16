@@ -6,7 +6,7 @@ describe Books do
     publish_date = Time.new(2013, 10, 0o3)
     publisher = 'Julie Pleck'
     cover_state = 'best'
-    @books = Books.new(name, publish_date, publisher, cover_state)
+    @books = Books.new(name, publisher, publish_date, cover_state)
   end
   context 'Unit Test for book class' do
     it 'should create a new Book Instance' do
