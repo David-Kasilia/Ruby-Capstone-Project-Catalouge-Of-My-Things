@@ -8,21 +8,20 @@ require_relative './genre'
 require_relative './music_module/music_module'
 
 class App
-    include MainMenu
-    include BookMethods
-    include MusicModule
-    attr_accessor :books, :labels, :music_albums, :genres
+  include MainMenu
+  include BookMethods
+  include MusicModule
+  attr_accessor :books, :labels, :music_albums, :genres
 
-    def initialize
-        @books = []
-        @labels = []
-        @music_albums = []
-        @genres = []
-    end
+  def initialize
+    @books = []
+    @labels = []
+    @music_albums = []
+    @genres = []
+  end
 
-    def load_data
-        @books = populate_book_list
-        @labels = populate_label_list
-    end
-
+  def load_data
+    @books = populate_book_list
+    @labels = populate_label_list
+  end
 end

@@ -6,7 +6,7 @@ describe Genre do
   before(:each) do
     items = []
     name = 'classical-song'
-    @genre = Genre.new(items, name)
+    @genre = Genre.new(name, items)
   end
   context 'Unit tests for Genre Class' do
     it 'should return a new instance for genre' do
