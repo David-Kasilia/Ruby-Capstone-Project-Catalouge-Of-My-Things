@@ -25,6 +25,6 @@ class App
     @books = populate_book_list
     @labels = populate_label_list
     @music_albums = populate_music_album_list
-    @genre = populate_genre_list
+    @genres = populate_genre_list
   end
 end
