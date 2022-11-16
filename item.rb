@@ -3,17 +3,14 @@ class Item
   attr_accessor :publish_date, :name
 
   # rubocop:disable Style/OptionalBooleanParameter
-
   def initialize(_id, name, publish_date, archived = false)
     @id = Random.rand(1..1000)
-
     @name = name
     @publish_date = publish_date
     @archived = archived
   end
   # rubocop:enable Style/OptionalBooleanParameter
 
-  # rubocop:enable Style/OptionalBooleanParameter
   def add_genre(genre)
     @genre = genre
     @genre.items.push(self) unless @genre.items.include?(self)
