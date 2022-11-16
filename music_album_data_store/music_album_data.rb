@@ -20,7 +20,7 @@ def populate_music_album_list
 end
 
 def populate_genre_list
-  fetch_data('genres').map do |genre|
+  fetch_data('genre').map do |genre|
     Genre.new(genre['name'])
   end
 end
