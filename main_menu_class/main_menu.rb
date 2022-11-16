@@ -1,9 +1,11 @@
 require_relative './main_menu_options'
 
-class MainMenu
+
+module MainMenu
+
   # rubocop:disable Metrics/CyclomaticComplexity
   # rubocop:disable Metrics/MethodLength
-  def self.main_menu
+  def main_menu
     MainMenuOptions.main_menu_options
     menu_option = gets.chomp.to_i
     case menu_option
@@ -28,7 +30,7 @@ class MainMenu
     when 10
       add_a_music_album
     when 11
-      add_a_movie
+      add_a_label
     when 12
       add_a_game
     when 13
