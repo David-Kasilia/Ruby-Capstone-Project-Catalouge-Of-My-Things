@@ -28,7 +28,7 @@ module MainMenu
     when 10
       add_a_music_album
     when 11
-      add_a_movie
+      add_a_label
     when 12
       add_a_game
     when 13
