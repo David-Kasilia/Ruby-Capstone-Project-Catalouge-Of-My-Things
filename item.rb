@@ -11,6 +11,7 @@ class Item
   end
   # rubocop:enable Style/OptionalBooleanParameter
 
+  # rubocop:enable Style/OptionalBooleanParameter
   def add_genre(genre)
     @genre = genre
     @genre.items.push(self) unless @genre.items.include?(self)
