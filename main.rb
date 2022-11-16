@@ -1,8 +1,9 @@
-require_relative './main_menu_class/main_menu'
+require_relative './app'
 
 def main
+  app = App.new
   puts 'Welcome to Your Catalogue Application'
-  MainMenu.main_menu
+  app.main_menu
 end
 
 main
