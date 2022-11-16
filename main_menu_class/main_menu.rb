@@ -44,5 +44,3 @@ module MainMenu
   # rubocop:enable Metrics/CyclomaticComplexity
   # rubocop:enable Metrics/MethodLength
 end
-
-
