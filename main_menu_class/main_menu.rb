@@ -1,9 +1,9 @@
 require_relative './main_menu_options'
 
-class MainMenu
+module MainMenu
   # rubocop:disable Metrics/CyclomaticComplexity
   # rubocop:disable Metrics/MethodLength
-  def self.main_menu
+  def main_menu
     MainMenuOptions.main_menu_options
     menu_option = gets.chomp.to_i
     case menu_option
