@@ -1,5 +1,6 @@
 require_relative '../music_album'
 require_relative '../genre'
+require_relative '../music_album_data_store/music_album_data'
 
 module MusicModule
   def add_a_music_album
@@ -13,10 +14,15 @@ module MusicModule
     puts "enter publish date in 'yyyy-mm-dd' format: "
     publish_date = gets.chomp
 
+    store_music = fetch_data('music_album')
+
     select_genre
 
     to_add = MusicAlbum.new(archived, name, publish_date)
     @music_albums << to_add
+    music_obj_data = { archived: archived, name: name, publish_date: publish_date }
+    store_music.push(music_obj_data)
+    update_data('music_album', store_music)
     puts 'Music Added Succesfully'
   end
 
@@ -58,9 +64,12 @@ module MusicModule
     puts 'Add a new Genre'
     print 'Add a Genre Name: '
     name = gets.chomp
+    store_genre = fetch_data('genre')
     new_genre = Genre.new(name)
     @genres << new_genre unless @genres.include?(new_genre)
-    @genres << new_genre
+    genre_obj_data = { name: name }
+    store_genre.push(genre_obj_data)
+    update_data('genre', store_genre)
     puts 'Genre was added successfully'
   end
 

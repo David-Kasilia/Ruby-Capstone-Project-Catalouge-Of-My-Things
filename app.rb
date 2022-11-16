@@ -6,6 +6,7 @@ require_relative './main_menu_class/main_menu'
 require_relative './music_album'
 require_relative './genre'
 require_relative './music_module/music_module'
+require_relative './music_album_data_store/music_album_data'
 
 class App
   include MainMenu
@@ -23,5 +24,7 @@ class App
   def load_data
     @books = populate_book_list
     @labels = populate_label_list
+    @music_albums = populate_music_album_list
+    @genre = populate_genre_list
   end
 end
