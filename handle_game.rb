@@ -4,8 +4,6 @@ require_relative './game'
 require_relative './author'
 
 module HandleGame
-
-
   def add_a_game
     print 'Is the game multiplayer? (Y/N): '
     multiplayer = gets.chomp.downcase == 'y' || false
@@ -17,7 +15,7 @@ module HandleGame
     last_played_at = Date.parse(gets.chomp)
     return unless last_played_at
 
-    @games.push(Game.new(multiplayer, publish_date, last_played_at, archived = false))
+    @games.push(Game.new(multiplayer, publish_date, last_played_at, archived: false))
     puts 'Game added successfully'
 
     print 'Do you want to add an author? (Y/N): '
@@ -40,12 +38,12 @@ module HandleGame
       puts "Multiplayer: #{game.multiplayer}"
       puts "Last played at: #{game.last_played_at}"
       puts "Publish date: #{game.publish_date}"
-      end
     end
+  end
 
-    def list_authors
-      @authors.each do |author|
-        puts "Author: #{author.first_name} #{author.last_name}"
-      end
+  def list_authors
+    @authors.each do |author|
+      puts "Author: #{author.first_name} #{author.last_name}"
     end
-   end
+  end
+end
