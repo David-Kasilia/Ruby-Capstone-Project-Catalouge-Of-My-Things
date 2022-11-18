@@ -5,7 +5,6 @@ require_relative '../game_author_class/author'
 require_relative '../games_data_store/games_data'
 
 module HandleGame
-  # rubocop:disable Metrics/MethodLength
   def add_a_game
     puts 'Enter the name of the game:'
     name = gets.chomp
@@ -31,7 +30,6 @@ module HandleGame
     add_author if gets.chomp.downcase == 'y'
   end
 
-  # rubocop:enable Metrics/MethodLength
   def add_author
     print 'First name: '
     first_name = gets.chomp
