@@ -7,18 +7,22 @@ require_relative './music_album'
 require_relative './genre'
 require_relative './music_module/music_module'
 require_relative './music_album_data_store/music_album_data'
+require_relative './handle_game'
 
 class App
   include MainMenu
   include BookMethods
   include MusicModule
-  attr_accessor :books, :labels, :music_albums, :genres
+  include HandleGame
+  attr_accessor :books, :labels, :music_albums, :genres, :games, :authors
 
   def initialize
     @books = []
     @labels = []
     @music_albums = []
     @genres = []
+    @games = []
+    @authors = []
   end
 
   def load_data

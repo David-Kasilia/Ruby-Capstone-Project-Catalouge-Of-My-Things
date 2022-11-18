@@ -12,17 +12,17 @@ module MainMenu
     when 2
       list_all_music_albums
     when 3
-      list_all_movies
+      list_all_sources
     when 4
-      list_of_games
+      list_games
     when 5
       list_all_genres
     when 6
       list_all_labels
     when 7
-      list_all_authors
+      list_authors
     when 8
-      list_all_sources
+      add_author
     when 9
       add_a_book
     when 10
