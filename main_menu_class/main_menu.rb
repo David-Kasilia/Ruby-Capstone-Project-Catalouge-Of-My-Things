@@ -12,26 +12,24 @@ module MainMenu
     when 2
       list_all_music_albums
     when 3
-      list_all_sources
-    when 4
       list_games
-    when 5
+    when 4
       list_all_genres
-    when 6
+    when 5
       list_all_labels
-    when 7
+    when 6
       list_authors
-    when 8
+    when 7
       add_author
-    when 9
+    when 8
       add_a_book
-    when 10
+    when 9
       add_a_music_album
-    when 11
+    when 10
       add_a_label
-    when 12
+    when 11
       add_a_game
-    when 13
+    when 12
       puts 'All catalogue data has been saved'
       puts 'Thank you for using your catalogue'
       exit

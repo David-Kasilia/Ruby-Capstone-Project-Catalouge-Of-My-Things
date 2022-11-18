@@ -42,13 +42,13 @@ module MusicModule
 
   def select_genre
     if @genres.any?
-      print "Enter 'S' to Select any existing Genre or 'N' to Create a New Genre"
+      print "Enter 'S' to Select any existing Genre or 'N' to Create a New Genre: "
       genre_option = gets.chomp.upcase
       case genre_option
       when 'N'
         add_a_genre
       when 'S'
-        puts 'Select a Music Genre from the list below by index'
+        puts 'Select a Music Genre from the list below by index: '
         list_all_genres
         selected = gets.chomp.to_i
         @genres[selected]
@@ -61,7 +61,7 @@ module MusicModule
   end
 
   def add_a_genre
-    puts 'Add a new Genre'
+    puts 'Add a new Genre: '
     print 'Add a Genre Name: '
     name = gets.chomp
     store_genre = fetch_data('genre')
