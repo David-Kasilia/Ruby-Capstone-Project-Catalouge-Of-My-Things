@@ -1,4 +1,4 @@
-require_relative '../author'
+require_relative '../game_author_class/author'
 
 require 'date'
 

@@ -1,4 +1,4 @@
-require_relative '../genre'
+require_relative '../music_genre_class/genre'
 require_relative '../item'
 require 'date'
 

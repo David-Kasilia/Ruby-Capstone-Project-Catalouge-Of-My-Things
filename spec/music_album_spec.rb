@@ -1,4 +1,4 @@
-require_relative '../music_album'
+require_relative '../music_genre_class/music_album'
 require_relative '../item'
 
 describe MusicAlbum do
