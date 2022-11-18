@@ -11,7 +11,7 @@ module HandleGame
     name = gets.chomp
     print 'Is the game multiplayer? (Y/N): '
     multiplayer = gets.chomp.downcase == 'y' || false
-    print 'Last played at: [enter date in YYYY-MM-DD format]: '
+    print 'Enter Game Publish Date at: [enter date in YYYY-MM-DD format]: '
     publish_date = Date.parse(gets.chomp)
     return unless publish_date
 
@@ -31,7 +31,6 @@ module HandleGame
     puts 'Game added successfully'
     print 'Do you want to add an author? (Y/N): '
     add_author if gets.chomp.downcase == 'y'
-    puts 'Author added successfully'
   end
 
   # rubocop:enable Metrics/MethodLength
