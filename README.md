@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="https://github.com/microverseinc/readme-template/raw/master/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 </div>
 
@@ -135,7 +135,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder:<br/>
 `git clone shh key`
 
 <!--
@@ -149,8 +149,8 @@ Example commands:
 
 ### Install
 
-Install this project with:
-`cd Ruby-Capstone-Project-Catalouge-Of-My-Things`
+Install this project with:<br/>
+`cd Ruby-Capstone-Project-Catalouge-Of-My-Things`<br/>
 `gem install rspec`
 
 
