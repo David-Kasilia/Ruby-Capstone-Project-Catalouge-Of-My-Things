@@ -31,7 +31,6 @@ module HandleGame
     puts 'Game added successfully'
     print 'Do you want to add an author? (Y/N): '
     add_author if gets.chomp.downcase == 'y'
-    puts 'Author added successfully'
   end
 
   # rubocop:enable Metrics/MethodLength
