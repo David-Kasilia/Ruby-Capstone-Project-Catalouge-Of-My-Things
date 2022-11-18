@@ -8,6 +8,7 @@ require_relative './genre'
 require_relative './music_module/music_module'
 require_relative './music_album_data_store/music_album_data'
 require_relative './handle_game'
+require_relative './games_data_store/games_data'
 
 class App
   include MainMenu
@@ -30,5 +31,7 @@ class App
     @labels = populate_label_list
     @music_albums = populate_music_album_list
     @genres = populate_genre_list
+    @games = populate_games_list
+    @authors = populate_authors_list
   end
 end
