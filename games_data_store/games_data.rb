@@ -15,7 +15,7 @@ end
 
 def populate_games_list
   fetch_data('games').map do |game|
-    Game.new(game['name'], game['multiplayer'], game['last_played_at'], game['publish_date'], game['archived'])
+    Game.new(game['name'], game['multiplayer'], game['last_played_at'], game['publish_date'])
   end
 end
 

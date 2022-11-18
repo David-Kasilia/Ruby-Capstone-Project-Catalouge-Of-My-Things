@@ -19,13 +19,11 @@ module HandleGame
     last_played_at = Date.parse(gets.chomp)
     return unless last_played_at
 
-    print 'Is the game Archived? (Y/N): '
-    archived = gets.chomp.downcase == 'y' || false
     store_games = fetch_data('games')
-    new_game = Game.new(name, multiplayer, publish_date, last_played_at, archived)
+    new_game = Game.new(name, multiplayer, publish_date, last_played_at)
     @games << new_game
     games_obj_data = { name: name, multiplayer: multiplayer, publish_date: publish_date,
-                       last_played_at: last_played_at, archived: archived }
+                       last_played_at: last_played_at }
     store_games << games_obj_data
     update_data('games', store_games)
     puts 'Game added successfully'
