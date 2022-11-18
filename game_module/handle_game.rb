@@ -1,8 +1,8 @@
 require 'json'
 require 'date'
-require_relative './game'
-require_relative './author'
-require_relative './games_data_store/games_data'
+require_relative '../game_author_class/game'
+require_relative '../game_author_class/author'
+require_relative '../games_data_store/games_data'
 
 module HandleGame
   # rubocop:disable Metrics/MethodLength

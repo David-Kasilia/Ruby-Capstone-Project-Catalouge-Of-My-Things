@@ -1,5 +1,5 @@
-require_relative '../music_album'
-require_relative '../genre'
+require_relative '../music_genre_class/music_album'
+require_relative '../music_genre_class/genre'
 require_relative '../music_album_data_store/music_album_data'
 
 module MusicModule
